@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+:root{
+    --cor-primaria: #000000;
+    --cor-segundaria: #f6f6f6;
+    --cor-terciaria: #8CB9BD;
+
+    --font-primaria: 'Krona One', sans-serif;
+    --font-segundaria: 'Montserrat', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-segundaria); 
+}
+
+.cabecalho{
+   padding: 2% 0% 0% 15%; 
+    
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 5rem;   
+}
+
+.cabecalho__menu__link{
+    font-family: var(--font-segundaria);
+    font-weight: 600;
+    font-size:  1.5rem;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.apresentacao3{
+    margin: 4.6% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao3__conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao3__conteudo__titulo{
+    font-size: 1.87rem;
+    font-family: var(--font-primaria);
+}
+
+.apresentacao3__conteudo__texto{
+    font-size: 1.56rem;
+    font-family: var(--font-segundaria);
+    font-weight: 400;
+}
+
+.conteudo_destaque{
+    color: var(--cor-terciaria);
+    font-family: var(--font-segundaria);
+    font-weight: 400;
+    font-size: 1.56rem;
+}
+
+.lista__item{
+    font-size: 1.56rem;
+    font-family: var(--font-segundaria);
+    font-weight: 400;
+}
+
+.apresentacao3__conteudo__subtitle{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.img_alura{
+    width: 50%;
+}
+
+.rodape{
+    padding: 1.5rem;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
+    text-align: center;
+    font-family: var(--font-segundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+/* Comando que vai alterar os valores de medida das telas a partir de um determinado tamanho, para tornar a tela propocional a dispositivo */
+@media (max-width: 807px){
+    /* Declaração de variavel */
+    .cabecalho{
+        padding: 10%;
+    }
+
+    .cabecalho__menu{
+         justify-content: center;
+    }
+
+    .apresentacao3{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao3__conteudo{
+        width: auto;
+    }
+}
